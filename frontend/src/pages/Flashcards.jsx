@@ -101,7 +101,7 @@ const Flashcards = () => {
             <select
               value={selectedDoc}
               onChange={(e) => setSelectedDoc(e.target.value)}
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+              className="flex-1 border border-gray-300 w-[250px] px-4 py-3 rounded-lg"
             >
               <option value="">Select a document...</option>
               {documents.map((doc) => (

@@ -134,7 +134,7 @@ const Documents = () => {
               <div key={doc._id} className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
-                    <h3 className="font-semibold text-gray-900 truncate">{doc.title}</h3>
+                    <h3 className="font-semibold text-gray-900 truncate w-[250px]">{doc.title}</h3>
                     <p className="text-sm text-gray-500">
                       {(doc.fileSize / 1024 / 1024).toFixed(2)} MB
                     </p>
