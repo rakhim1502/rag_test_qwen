@@ -1,6 +1,9 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Barcha API so'rovlar Vercel'ga emas, aynan Render'ga borishi uchun manzil:
+axios.defaults.baseURL = 'https://rag-test-qwen.onrender.com';
+
 const AuthContext = createContext();
 
 export const useAuth = () => {
